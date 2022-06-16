@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Survey Form Project for freeCodeCamp" />
+	<meta name="author" content="Joseph A. Sidwa" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+	<title>Survey: About Dogs!</title>
+  </head>
+  <body>
+    <div class="container">
+	  <header class="header">
+        <h1 id="title" class="text-center">Survey: About Dogs!</h1>
+        <p id="description" class="text-center">Tell Us about You and Man's Best Friend.</p>
+	  </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input class="form-control" id="name" type="text" placeholder="Enter your name." required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input class="form-control" id="email" type="email" placeholder="Enter your email." required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">How many dogs live with you? <span class="clue">(optional)</span></label>
+          <input class="form-control" id="number" type="number" min="0" max="12" placeholder="0" />
+        </div>
+        <div class="form-group">
+          <label for="dropdown">Where do they spend most of their time? <span class="clue">(optional)</span></label>
+          <select class="form-control" id="dropdown">
+            <option disabled selected value="">(Please select an option.)</option>
+            <option value="indoor">Indoor</option>
+            <option value="oudoor">Outdoor</option>
+            <option value="indoor-outdoor">Indoor/Outdoor</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Are you planning on getting a new puppy or an older dog soon?</p>
+          <label><input class="input-radio" type="radio" name="more-dogs" value="yes" />Yes</label>
+          <label><input class="input-radio" type="radio" name="more-dogs" value="no" checked />No</label>
+        </div>
+        <div class="form-group">
+          <p>If so, what kinds of dog breed interest you? <span class="clue">(Check all that apply.)</span></p>
+          <label>
+		    <input class="input-checkbox" type="checkbox" name="dog-breeds" value="sporting" />
+		    <a href="https://www.akc.org/dog-breeds/sporting/" target="_blank">Sporting Dogs</a>
+          </label>
+          <label>
+		    <input class="input-checkbox" type="checkbox" name="dog-breeds" value="hound" />
+		    <a href="https://www.akc.org/dog-breeds/hound/"target="_blank">Hound Dogs</a>
+          </label>
+          <label>
+            <input class="input-checkbox" type="checkbox" name="dog-breeds" value="working" />
+		    <a href="https://www.akc.org/dog-breeds/working/" target="_blank">Working Dogs</a>
+          </label>
+          <label>
+            <input class="input-checkbox" type="checkbox" name="dog-breeds" value="terrier" />
+		    <a href="https://www.akc.org/dog-breeds/terrier/" target="_blank">Terriers</a>
+          </label>
+          <label>
+		    <input class="input-checkbox" type="checkbox" name="dog-breeds" value="toy" />
+		    <a href="https://www.akc.org/dog-breeds/toy/" target="_blank">Toy Dogs</a>
+          </label>
+          <label>
+            <input class="input-checkbox" type="checkbox" name="dog-breeds" value="non-sporting" />
+		    <a href="https://www.akc.org/dog-breeds/non-sporting/" target="_blank">Non-Sporting Dogs</a>
+          </label>
+		  <label>
+            <input class="input-checkbox" type="checkbox" name="dog-breeds" value="herding" />
+            <a href="https://www.akc.org/dog-breeds/herding/" target="_blank">Herding Dogs</a>
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Please tell us more about your interest in dogs!</p>
+          <textarea class="input-textarea" id="comments" class="full-width" name="comments" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button class= "submit-button" type="submit" id="submit" name="submit-button">Submit</button>
+        </div>
+      </form>
+	</div>
+  </body>
+</html>
